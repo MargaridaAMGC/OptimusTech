@@ -1,0 +1,160 @@
+/* IMPORTAÇAO TIPO DE LETRA */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  /* VARIAVEIS */
+
+  :root {
+    --fonte: 'Inter', sans-serif;
+    --cor-branco: #ffffff;
+    --cor-textos: #667085;
+    --cor-titulos: #101828;
+    --cor-vermelho: #8E2424;
+    --cor-texto-logo: #3A404E;
+    --cor-fundo-vermelho: rgba(195, 25, 25, 0.03);
+    --cor-fundo-footer: #F9FAFB;
+  }
+
+  /* BASE */
+
+  * {
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--cor-textos);
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* NAV BAR */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.12rem;
+    font-weight: 500;
+    column-gap: 0.5rem;
+}
+
+.logo__texto {
+    color: var(--cor-texto-logo);
+}
+.links__navbar {
+  margin-right: 23rem;
+}
+.links__navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    font-family: var(--fonte);
+}
+
+.botoes__navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.botao__registar {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    padding: 0.8rem 1rem;
+    border-radius: .5rem ;
+    border: 1px solid var(--cor-vermelho);
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+  height: 25rem;
+}
+
+.cabecalho__subtitulo {
+  color: var(--cor-vermelho);
+  font-weight: 600;
+}
+
+.cabecalho__titulo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--cor-titulos);
+  padding: 1.5rem 0;
+}
+
+.cabecalho__texto {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  width: 50%;
+  line-height: 1.8rem;
+}
+/* METRICAS */
+.metricas {
+  padding: 0 5rem 6rem 5rem;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.metricas__lista {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 32px;
+  width: 76rem;
+}
+.metricas__item {
+  width:17.5rem ;
+}
+
+.metricas__item h3 {
+  font-size: 3.75rem;
+  font-weight: 600;
+  color: var(--cor-vermelho);
+}
+.metricas__item h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--cor-titulos);
+  padding: 0.75rem 0 0.5rem 0;
+}
+.metricas__item p {
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+/* VAGAS */
+
+.vagas__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 5rem 6rem 5rem;
+}
+
+.anuncio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.vagas__container img {
+  width: 76rem;
+}
