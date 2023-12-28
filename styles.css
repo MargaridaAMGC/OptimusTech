@@ -6,6 +6,7 @@
   :root {
     --fonte: 'Inter', sans-serif;
     --cor-branco: #ffffff;
+    --cor-cinza-claro: #EAECF0;
     --cor-textos: #667085;
     --cor-titulos: #101828;
     --cor-vermelho: #8E2424;
@@ -152,9 +153,87 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.anuncio h5 {
+  background-color: var(--cor-fundo-vermelho);
+  background-size: auto;
+  border-radius: 1rem;
+  text-align: center;
+  padding: .25rem .75rem;
+  color: var(--cor-vermelho);
+}
+
+.anuncio h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--cor-titulos);
+  padding: 1.25rem 0;
+}
+
+.anuncio p {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .vagas__container img {
   width: 76rem;
+  padding: 4rem 0 0 0;
+}
+
+.vagas__lista {
+  display: flex;
+  flex-direction: column;
+  width: 48rem;
+}
+
+.vagas__lista h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--cor-titulos);
+  padding: 4rem 0 2rem 0;
+}
+
+.vagas__lista__item {
+  display: grid;
+  border-radius: 1rem;
+  border: 1px solid var(--cor-cinza-claro);
+  background-color: var(--cor-branco);
+  grid-template-areas: 
+  "posicao posicao"
+  "tempo salario";
+  grid-template-columns: auto 1fr;
+  column-gap: 1.5rem;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.vagas__lista__item h6 {
+  grid-area: posicao;
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--cor-titulos);
+  padding-bottom: 2rem;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: var(--cor-fundo-vermelho);
+  border-radius: 1rem;
+  margin: 0 7rem 6rem 7rem;
+  padding: 64px;
+}
+
+.depoimentos h5 {
+  color: var(--cor-vermelho);
+  font-weight: 600;
+  font-size: 0.87rem;
 }
