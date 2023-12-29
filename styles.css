@@ -35,6 +35,7 @@
   /* NAV BAR */
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 1.1rem 0;
@@ -236,4 +237,122 @@
   color: var(--cor-vermelho);
   font-weight: 600;
   font-size: 0.87rem;
+}
+
+.depoimentos h2 {
+  color: var(--cor-titulos);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.depoimentos__perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.depoimentos__perfil h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-titulos);
+  padding: 1rem 0 .25rem 0;
+}
+
+.depoimentos__perfil p {
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+
+/* RODAPE */
+
+.rodape {
+  background-color: var(--cor-fundo-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.rodape__titulo {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--cor-titulos);
+  padding-bottom: 1.25rem;
+}
+
+.rodape__texto {
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 2.5rem;
+}
+
+#registar {
+  background-color: var(--cor-branco);
+  border-radius: .5rem;
+  border: 1px solid #D0D5DD;
+  padding: .75rem .87rem .75rem 1rem;
+  width: 22.5rem;
+}
+
+#registar::placeholder {
+  font-size: 1rem;
+  color: var(--cor-vermelho);
+  font-family: var(--fonte);
+}
+
+.rodape__input__botao {
+  background-color: var(--cor-vermelho);
+  color: var(--cor-branco);
+  border-radius: .5rem;
+  border: 1px solid var(--cor-vermelho);
+  padding: .75rem 1.25rem .75rem 1.25rem;
+  font-family: var(--fonte);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rodape__creditos {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #98A2b3;
+  padding-top: 2rem;
+}
+
+/* ANIMAÇÕES / PERSONALIZAÇOES */
+/* NAVBAR */
+.links__navbar a:hover, .botoes__navbar a:hover {
+  color: var(--cor-vermelho);
+  font-weight: 600;
+}
+
+.botao__registar:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-vermelho);
+  font-weight: 600;
+}
+
+/* VAGAS */
+
+.vagas__lista__item:hover {
+  background-color: var(--cor-fundo-vermelho);
+  color: var(--cor-branco);
+  border-color: var(--cor-vermelho);
+}
+
+/* RODAPE */
+
+#registar:active, #registar:focus {
+  border: 1px solid var(--cor-vermelho);
+  outline: none;
+}
+
+.rodape__input__botao:hover, .rodape__input__botao:active {
+  background-color: var(--cor-branco);
+  color: var(--cor-vermelho);
+  font-weight: 600;
 }
